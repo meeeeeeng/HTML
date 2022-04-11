@@ -2,82 +2,86 @@
 <html>
     <head>
     <style type = "text/css">
-        body,head,h1,css1,css2,css3,a,h3,table{font-family:“Malgun Gothic”,“TimesNewRoman”; }
-        body{border-collapse:collapse; border-color:rgb(221,235,200);margin:10px;width:80%;}
+        body,head,h1,a,h3,table{position:static;font-family:“Malgun Gothic”,“TimesNewRoman”; }
+        body{border:10px;border-style: solid; border-color:rgb(221,235,200);}
 
-        h1{text-align: center; text-shadow: 2px 2px 1px rgb(100, 97, 92);}
+        h1{ margin-left: 30px;position:absolute;text-align: center; text-shadow: 2px 2px 1px rgb(100, 97, 92);}
         css1{color:rgb(247,147,193);text-align: center; text-shadow: 2px 2px 1px rgb(100, 97, 92);}
         css2{color:rgb(254,233,175);text-align: center; text-shadow: 2px 2px 1px rgb(100, 97, 92);}
         css3{color:rgb(185,231,251);text-align: center; text-shadow: 2px 2px 1px rgb(100, 97, 92);}
-        p{font-weight: bold;}
-        a{font-size:medium;font-weight: bold;text-decoration:none; padding-top:5px;padding-bottom:5px; padding-left:200px; padding-right:200px; border: 4px;
-            border:on;margin-left: 20px; margin-right:20px;}
-        #a1{ color:black;position:static; text-decoration: none;background-color: rgb(254, 234, 181);}
-        #a2{ color:white; position:static;text-decoration: none; background-color: rgb(9, 41, 118);}   
-        #a3{ color:black;position:static; text-decoration: none;background-color: rgb(240, 199, 219);} 
-        h3 { color: red; background-color:#90ff90; margin-left: 60px; margin-right: 60px }
-        table{text-align: left;border-spacing:8px;}
+      
+        table{text-align: left;}
+        a{text-decoration: none; position:absolute;text-align:center;font-size:medium;font-weight: bold;text-decoration:none; }
+        #a1{ font-weight:bold; text-align:center; color:black; background-color: rgb(254, 234, 181); height:40px; width:auto;}
+        #a2{ font-weight:bold; text-align:center; color:white; background-color: rgb(9, 41, 118); height:40px; width:auto;}   
+        #a3{ margin-left:0;color:black; } 
+       
+       
+        h3 { color: red; background-color:#90ff90; margin-left: 10px; margin-right: 10px }
+        /*table{border-top :1px; margin-left:10px;  margin-right:10px; margin-top:10px; margin-bottom:0px; 
+            text-align:left;border-spacing:8px;}*/
 
         /*#L.image{background-image:url(flower.png); background-repeat:no-repeat ; background-size:20%;}*/
-        #block {display:inline-block}
-        #block1 {z-index:1;padding-left:0%;position:relative;display:inline-block; align-items:top;}
-        #block1 {z-index:2;padding-left:0%;position:relative;display:inline-block}
-        #block1 {z-index:3;padding-left:0%;position:relative;display:inline-block}
-        #opaci {opacity:0.5;position:static}
-        #line{border-bottom:1px; color:black;}
+       
+       
+        #opaci {opacity:0.5; background-position:-40px -55px;width:500px; height:250px;background-size:20%}
+        
     </style>
     </head>
 
-    <body>
+    <body> 
+        <br>
         <h1><css1>Elastic</css1> <css2>데이터 분석가</css2> 및 <css3>엔지니어</css3> 과정  <br>
             온라인 교육생 모집</h1>
-
-            <table border="0" margin-left="200px"  margin-right="200px" margin-top="200px"  margin-bottom="200px">    
+<br><br><br><br><br><br><br>
+            <table>    
             <tr>
                 <td rowspan="2"> <img id="block1" src="flower.png" position="left" width ="70" alt ="꽃 이미지" ></td>
-                <tr id="line"></tr>
+                <td> <br></td>
+                <td><br> </td>
             </tr>
+           
           
             <tr>
-                <th></th>
+                
                 <th id="line">수강대상:</th> 
                 <th> 2022학년도 상명대학교 재학생(휴학생 포함), 대학원생, 교직원</th>
                 </tr>     
                 <tr><th></th>
-                    <th>신청기간:</th> <th> 2022. 3.15.(화)~3. 21..(화)</th>
+                    <th>신청기간:</th> <th> 2022. 3. 15.(화) ~ 3. 21.(화)</th>
                 </tr>
                 <tr><th></th>
-                    <th>수강기간:</th><th> 3. 24.(목)~ 8. 31.(수)</th>
+                    <th>수강기간:</th><th> 3. 24.(목) ~ 8. 31.(수)</th>
                 </tr>
                 <tr><th></th>
                     <th>수강방법:</th><th> e-Campus를 통한 온라인 수강</th>
                 </tr>
                 <tr>
-                <td> <img id="block" src="flower.png" position="left" width ="70" alt ="꽃 이미지" > </td>
+                <td> <img  src="flower.png" position="left" width ="70" alt ="꽃 이미지" > </td>
                 <tr>
-            </table>
-            <a id="a1" href="https://docs.google.com/forms/d/e/1FAIpQLSd6AtqgEJDx8HzeT7QD1tNDyWxb8gEPACez41vcKWcxl_SlSg/closedform">Elastic 데이터 분석가 과정</a>
-            <br>  <br>
-            <table>
+                    
                 <tr>
                     <td rowspan="6"></td>
                     <tr></tr>
                 </tr>
+                <tr>
+                    <td colspan="2" a id="a1" href="https://docs.google.com/forms/d/e/1FAIpQLSd6AtqgEJDx8HzeT7QD1tNDyWxb8gEPACez41vcKWcxl_SlSg/closedform">Elastic 데이터 분석가 과정</a></td>
+                </tr>
 
+                
               
                 <tr>
-                    <th>개요:</th> <th>Elastic Stack의 Kibana를 활용한 데이터 분석 및 시각화 과정</th>
+                    <th  colspan="2"><br><br>개요:  Elastic Stack의 Kibana를 활용한 데이터 분석 및 시각화 과정</th>
                 </tr>
                 <tr>
-                    <th>대상:</th><th> SW 비전공자(optinal)</th>
+                    <th colspan="2">대상:  SW 비전공자(optinal)<br><br><br></th>
                 </tr>
-            </table>
-        <br><br>
+                
+            <tr>
 
-
-            <a id="a2"  href="https://docs.google.com/forms/d/e/1FAIpQLSd6AtqgEJDx8HzeT7QD1tNDyWxb8gEPACez41vcKWcxl_SlSg/closedform" >Elastic 엔지니어 과정</a>
-        <br><br>
-        <table>
+                <td colspan="2" a id="a2"  href="https://docs.google.com/forms/d/e/1FAIpQLSd6AtqgEJDx8HzeT7QD1tNDyWxb8gEPACez41vcKWcxl_SlSg/closedform" >Elastic 엔지니어 과정</a></td>
+     
+             </tr>    
 
             <tr>
                     <td rowspan="6"></td>
@@ -85,26 +89,35 @@
                 </tr>
 
             <tr>
-                <th>개요:</th> <th>Elastic Stack의 입문부터 고급가능까지 다루는 전문가 과정</th>
+                <th colspan="2"><br><br>개요: Elastic Stack의 입문부터 고급가능까지 다루는 전문가 과정</th>
             </tr>
-                <th>대상:</th><th>SW 전공자(3,4학년 위주)</th>
+                <th colspan="2">대상: >SW 전공자(3,4학년 위주)<br><br><br><br></th>
             </tr>
-                
+              
             <tr>
-                <td></td>
-             <th>문의 02)-2287-6448,simin99ks@smu.ac.kr</th>
+               
+            </tr>
+           
+
+           
+            <tr>
+                
+              <th colspan="2">문의 02)-2287-6448,simin99ks@smu.ac.kr</th>
              <td></td>
             </tr>
-    </table>  
-<br><br>
-    <a id="a3"  href="file:///C:/Users/Meengzee/Desktop/Web%20programming/mid_201921436_2.html" >더 알아보기</a>
-    <br><br>
-       <img id="opaci" src="flower.png" position="right" width ="500" alt ="꽃 이미지" >
+        </table>  
+        <br><br> 
+        <img id="opaci" src="flower.png" position="right" width ="500" alt ="꽃 이미지" >
+        <br>
 
-       <figure>
-            <a href="https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&wr_id=687">
-            <img src="SMmark.png" alt="상명대 마크" width="200">
-       </figure>
+        <a id="a3"  href="file:///C:/Users/Meengzee/Desktop/Web%20programming/mid_201921436_2.html" >더 알아보기</a>
+        <br><br>
+        
+
+        <figure>
+                <a href="https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&wr_id=687">
+                <img src="SMmark.png" alt="상명대 마크" width="200">
+        </figure>
          
     </body>
 
