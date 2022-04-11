@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h3>도서 검색</h3>
+        <hr><br>
+        <form name="search" method="get" action="https://lib.smu.ac.kr/Search/">
+           도서 명: <input type="text" name="q"> 
+          <br>
+           
+           자료 위치: <select name="rt" size="1">
+           <option value="MM">단행본</option>
+           <option value="EB">전자</option>
+           <option value="SS">연속간행물</option>     
+           </select> 
+           <br>
+
+           분류 명: <select name="st" size="1">
+            <option value="tt">서명</option>
+            <option value="aa">저자명</option>
+            <option value="pp">출판사</option>
+            <option value="cp">분류번호</option>
+            <option value="ss">키워드</option>
+            </select> <br><br>
+
+           
+           
+
+            <input type="hidden" name="campuscode" value="01">
+<hr>
+            <input type="submit" value="검색"/>
+            <input type="reset" value="취소"/>
+
+    </body>
+</html>

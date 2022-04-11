@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h3>도서 예약 대출 </h3>
+        <form name="search" method="get" action="https://lib.smu.ac.kr/Search/">
+            
+            성명:
+            <input type="text"name="person"/> 
+            <br>
+
+            전화:
+            <input type="tel" placeholder="00*-000*-0000"
+            pattern="[0-9]{2,3}-[0-9]{3,4-[0-9]{4}">
+            <br>
+
+            이메일:
+            <input type="email"/>
+            <br>
+
+            도서명:
+            <input type="text" name="bookname"/> 
+            <br>
+
+           예약 희망일:
+            <input type="date" name="last" min="2022-04-11">
+            <br>
+
+            수령 시간:
+            <input type="time" name="from" min="09:00" max="18:00"> 에서
+            <input type="time" name="until" min="09:00" max="18:00">
+
+            <br>
+            
+
+
+
+            <hr>
+            <input type="submit" value="예약하기"/>
+            </form>
+    </body>
+</html>
