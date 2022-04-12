@@ -3,10 +3,13 @@
     <head><style type = "text/css">
 
 h3 {text-align: center;}
-table {text-align: center; border : 1px solid black; border-collapse : collapse;}}
+body {text-align:left;}
+table {text-align: center; border : 2px solid black; border-collapse : collapse;}
 ol{text-align: left;font-weight: bold;}
 th{background-color:rgb(217,217,217);}
-
+tr{font-weight:lighter;}
+#li{font-weight:lighter;}
+bold{font-weight: bold; text-decoration:underline;}
 </style>
         
     </head>
@@ -23,12 +26,12 @@ th{background-color:rgb(217,217,217);}
             <br>
             <li>수강방법: e-Campus를 통한 온라인 수강</li>
             <br>
-            <dl style="font-weight:lighter">※신청 시 구글 신청서로 제출한 이메일로 강의 링크 안내 예정</dl>
+            <dl id="li">※신청 시 구글 신청서로 제출한 이메일로 강의 링크 안내 예정</dl>
             <br>
 
             <li>과정별 SM-Class명</li>
             <br>
-             <ol type="a" style="font-weight:lighter">
+             <ol type="a" id="li">
                     <li>2022년도 Elastic 데이터 분석가 과정(SW비전공자 위주)</li>
                     <br>
                     <li>2022년도 Elastic 엔지니어 과정(SW전공자 3, 4학년 위주)</li>
@@ -36,7 +39,7 @@ th{background-color:rgb(217,217,217);}
             <br>
                 <li>신청방법</li>
               
-                <ol type="a" style="font-weight:lighter">
+                <ol type="a" id="li">
                     <br>
                     <li>홈페이지 하단 구글 신청서 링크 접속 후 제출</li>
                     <br>
@@ -45,22 +48,24 @@ th{background-color:rgb(217,217,217);}
                     <li>홈페이지 하단 신청서 작성 후 이메일 제출</li>
                     <br>
                 </ol>
-                <dl style="color:red; margin-left:20px">※ 세 가지 모두 필수 제출(재·휴학생만)</dl>
+                <dl style="color:red; margin-left:20px; font-weight:lighter;">※ 세 가지 모두 필수 제출(재·휴학생만)</dl>
                 <dl style="font-weight:bold;text-decoration:underline;margin-left:20px;">※ 제출처: simin99ks@smu.ac.kr</dl>
                 <dl style="color:blue;text-decoration:underline;margin-left:20px;">※ 제출 시 이메일 제목: elatic 온라인 과정/캠퍼스/학과/이름</dl>
             
             <br>
                 <li>과정별 세부 내용</li>
-            <ol type="a" >
-                <li style="font-weight:lighter" >Elastic 엔지니어 과정</li>
+                <br>
 
-                <table border="1">
+            <ol type="a" >
+                <li id="li" >Elastic 엔지니어 과정</li>
+                    <br>
+                <table  border="1">
                     <tr>
-                        <th>순번</th>
+                        <th >순번</th>
                             <th>강의명</th>
                                 <th>내용</th>
                     </tr>
-                    <tr>
+                    <tr">
                         <td>1</td>
                         <td>Elastic 기초</td>
                         <td> 기본개념, 아키텍처,솔루션 소개</td>
@@ -75,11 +80,11 @@ th{background-color:rgb(217,217,217);}
                             Kibana 대시보드 만들기
                         </td>
                     </tr>
-
-
-
-
-                <li style="font-weight:lighter" >Elastic 데이터 분석가 과정</li>
+                    </table>
+                
+                    <br><br>
+            <li style="font-weight:lighter" >Elastic 데이터 분석가 과정</li>
+             <br>
                 <table border="1">
                     <tr>
                         <th>순번</th>
@@ -87,13 +92,13 @@ th{background-color:rgb(217,217,217);}
                                 <th>내용</th>
                     </tr>
                     <tr>
-                        <td>1</td>
+                        <td> 1 </td>
                         <td>CSV파일변환</td>
                         <td> 뱅크샐러드에서 다받은 엑셀파일을 CSV파일로 변환하는 방법을 설명합니다.</td>
                     </tr>
 
                     <tr>
-                        <td>2</td>
+                        <td>2 </td>
                         <td>Deployment생성</td>
                         <td>Elastic Cloud ID생성 후, Deployment생성 방법을 설명합니다.</td>
                     </tr>
@@ -149,18 +154,22 @@ th{background-color:rgb(217,217,217);}
                             (Metric에 한정)</td>
                     </tr>
 
+                    </table>
 
-
+                <br><br>
                 <li style="font-weight:lighter" >'엘라스틱과 함께하는 데이터 길라잡이 오리엔테이션'</li>
+                <br>
                 <ol type="1">
-                    <li>개요: 진로설정을 위해 SW관련 분야 전문가를 초청하여 IT트렌드, 
-                        취업 노하우등을 공유하는 강연</li>
-                    <li>소요시간: 1시간 36분정도</li>
+                    <li id="li">개요: 진로설정을 위해 SW관련 분야 전문가를 초청하여 IT트렌드,<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;취업 노하우등을 공유하는 강연</li>
+                        <br>
+                    <li id="li">소요시간: 1시간 36분정도</li>
+                    <BR>
 
 
                     <table border="1">
                         <tr>
-                            <th>순번</th>
+                            <th >순번</th>
                                 <th>내용</th>
                                     <th>강연자</th>
                         </tr>
@@ -207,8 +216,9 @@ th{background-color:rgb(217,217,217);}
                                 - kafka</td>
                             <td>Elastic 김병준</td>
                         </tr>
+                </table>
 
-                    <dl>※오리엔테이션 영상은 엔지니어 과정 3주차에 업로드</dl>
+                    <dl id="li">※오리엔테이션 영상은 엔지니어 과정 <bold>3주차에 업로드</bold></dl>
                 </ol>
 
             </ol>
