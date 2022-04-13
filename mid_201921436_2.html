@@ -2,17 +2,24 @@
 <html>
     <head><style type = "text/css">
 
-h3 {text-align: center;}
+h3 {text-align:center;}
 body {text-align:left;}
-table {text-align: center; border : 2px solid black; border-collapse : collapse;}
+
+table { border : 2px solid rgb(0, 0, 0); text-align:center;
+    border-collapse:collapse;margin:10px;}
 ol{text-align: left;font-weight: bold;}
-th{background-color:rgb(217,217,217);}
-tr{font-weight:lighter;}
+th{ background-color:rgb(217, 217, 217);}
+tr{font-weight:lighter}
+th,td{border:0.5px solid black;border-collapse:collapse;
+     padding-left:15px; padding-right:15px; padding-bottom:5px; padding-top:5px;}
+
+
+
+
 #li{font-weight:lighter;}
 bold{font-weight: bold; text-decoration:underline;}
 #sign{position:static; margin-left:600px;}
-th,td{ padding-left:15px; padding-right:15px; padding-bottom:5px; padding-top:5px;}
-#ltable{ padding-left:15px; padding-right:15px; padding-bottom:10px; padding-top:10px;}
+#ltable{ padding-left:100px; padding-right:100px; padding-bottom:20px; padding-top:20px;}
 
 </style>
         
@@ -63,14 +70,14 @@ th,td{ padding-left:15px; padding-right:15px; padding-bottom:5px; padding-top:5p
             <ol type="a" >
                 <li id="li" >Elastic 엔지니어 과정</li>
                     <br>
-                <table  border="1">
-                    <tr>
+                <table>
+                    <tr >
                         <th>순번</th>
                             <th>강의명</th>
                                 <th>내용</th>
                     </tr>
-                    <tr">
-                        <td>1</td>
+                    <tr>
+                        <td >1</td>
                         <td>Elastic 기초</td>
                         <td> 기본개념, 아키텍처,솔루션 소개</td>
                     </tr>
@@ -89,7 +96,7 @@ th,td{ padding-left:15px; padding-right:15px; padding-bottom:5px; padding-top:5p
                     <br><br>
             <li style="font-weight:lighter" >Elastic 데이터 분석가 과정</li>
              <br>
-                <table border="1">
+                <table >
                     <tr>
                         <th>순번</th>
                             <th>강의명</th>
@@ -158,7 +165,7 @@ th,td{ padding-left:15px; padding-right:15px; padding-bottom:5px; padding-top:5p
                             (Metric에 한정)</td>
                     </tr>
 
-                    </table>
+               </table>
 
                 <br><br>
                 <li style="font-weight:lighter" >'엘라스틱과 함께하는 데이터 길라잡이 오리엔테이션'</li>
@@ -168,32 +175,33 @@ th,td{ padding-left:15px; padding-right:15px; padding-bottom:5px; padding-top:5p
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;취업 노하우등을 공유하는 강연</li>
                         <br>
                     <li id="li">소요시간: 1시간 36분정도</li>
-                    <BR>
+                    <br>
 
+                       
+                    <table>
 
-                    <table border="1">
-                        <tr id="ltable">
-                            <th >순번</th>
+                        <tr>
+                            <th>순번</th>
                                 <th>내용</th>
                                     <th>강연자</th>
                         </tr>
                        
-                        <tr id="ltable">
+                        <tr>
                             <td>1</td>
-                            <td>환영인사</td>
+                            <td id="ltable">환영인사</td>
                             <td> SW사업단장 장준호</td>
                         </tr>
 
                         <tr>
                             <td>2</td>
-                            <td>Elastic Overview</td>
+                            <td id="ltable">Elastic Overview</td>
                             <td>Elastic 김종민</td>
                         </tr>
 
 
                         <tr>
                             <td>3</td>
-                            <td>OHCOACH Analytics
+                            <td id="ltable">OHCOACH Analytics<br>
                                 (Wearable을 이용한 데이터의 수집과 분석)
                             </td>
                             <td>Fitogether 윤지원</td>
@@ -202,23 +210,22 @@ th,td{ padding-left:15px; padding-right:15px; padding-bottom:5px; padding-top:5p
 
                         <tr>
                             <td>4</td>
-                            <td>AWS Solution Architect
+                            <td id="ltable">AWS Solution Architect<br>
                                 - Data Analyst</td>
                             <td>AWS 우창식</td>
                         </tr>
 
                         <tr>
                             <td>5</td>
-                            <td>Confluent Solution Architect
+                            <td id="ltable">Confluent Solution Architect
                                 - kafka</td>
                             <td>Confluent 김현수</td>
                         </tr>
 
                         <tr>
-                            <td>5</td>
-                            <td>Confluent Solution Architect
-                                - kafka</td>
-                            <td>Elastic 김병준</td>
+                            <td>6</td>
+                            <td id="ltable">마무리</td>
+                            <td style="padding:20px">Elastic 김병준</td>
                         </tr>
                 </table>
 
