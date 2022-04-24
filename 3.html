@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head> <style type="text/css">
+        #w3c_static { position: static; }
+        #h5_static { position: static; top: 100px; left: 300px; }
+        #css_relative { position: relative; left: 80px; }
+        #h5_absolute { position: absolute; top: 205px; left: 100px; }
+        #css_fixed { position: fixed; top: 20px; right: 30px; }
+
+        #w3c_z1 { z-index: 1; position: relative; top: -20px; left: 80px;}
+        #h5_z2 { z-index: 2; position: relative; top: -5px; left: 45px; }
+        #css_z3 { z-index: 3; position: relative; top: 5px; left: 10px; }
+        #w3c_z9 { z-index: 9; position: relative; top: -20px; left: 80px; }
+        #h5_z8 { z-index: 8; position: relative; top: -5px; left: 45px; }
+        #css_z7 { z-index: 7; position: relative; top: 5px; left: 10px; }
+
+
+        #w3c_float { float:left; border: thin solid black; }
+        #h5_float { float:left; top: 100px; left: 300px; }
+        #css_float { float:right; border: thin solid black;}
+
+        #intro1 { overflow: visible; float:left; width: 24%; height: 140px; border: medium double black;}
+        #intro2 { overflow: hidden; float:left; width: 24%; height: 140px; border: medium double black;}
+        #intro3 { overflow: scroll; float:left; width: 24%; height: 140px; border: medium double black;}
+        #intro4 { overflow: auto; float:left; width: 24%; height: 140px; border: medium double black; }
+
+        #intro_text { position: relative; left: 10%; width: 60%; padding: 5px;
+        border: medium double black; border-radius: 10px;
+        box-shadow: 8px 8px 20px 2px blue; }
+        #w3c_float { float:right; border: thin solid black; padding: 5px;
+        border-top-left-radius:8px; border-bottom-right-radius:8px;
+        box-shadow: 2px 2px 20px 4px green inset; }
+
+
+
+
+        #title:hover { border: thick double blue; padding:4px;
+        background-color: yellow; font-size: xx-large;
+        transition: border 4s, background-color 8s; }
+        #h5_logo { position: absolute; top: 10px; right: 60px; }
+        #h5_logo:hover { border: thin solid red; width: 108px; height: 132px;
+        transition: width 4s; }
+
+        #h5_trans { transform: translate(30px,30px); border: thin solid; }
+        #h5_scale { transform: scale(3, 1.5); border: thin solid; }
+        #h5_rotate { transform: rotate(45deg); border: thin solid; }
+        #h5_skew { transform: skew(30deg, 5deg); border: thin solid; }
+
+
+        </style> </head>
+        <body>
+        <h3>5.5 새로운 문서 표준 HTML5
+        <img src="W3C_logo.gif" id="w3c_static" width="72" height="40">
+        </h3>
+        <p>
+        <img src="H5_logo.gif" id="h5_static" width="54" height="66">
+        현재 W3C에서 표준안 개발을 하고 있는 HTML5는 차세대 웹문서 표준안으로 ...(중략)....
+        </p>
+        <h3> 5.5.1 HTML5의 탄생 배경 및 특징
+        <img src="CSS3_logo.gif" id="css_relative" width="54" height="66">
+        <img src="H5_logo.gif" id="h5_absolute" width="54" height="66">
+        </h3>
+        <img src="CSS3_ad.gif" id="css_fixed" width="166" height="70">
+        <p>HTML 4.0이 1997년 발표된 이후 벌써 10년 이상이 경과되었는데, IT 업계 ...(중략)..
+
+            <br>
+
+
+            <h3>5.5 새로운 문서 표준 HTML5 </h3>
+        <img src="W3C_L.gif" id="w3c_z1" width="72" height="40">
+        <img src="H5_L.gif" id="h5_z2" width="54" height="66">
+        <img src="CSS3_L.gif" id="css_z3" width="54" height="66">
+        <img src="W3C_L.gif" id="w3c_z9" width="72" height="40">
+        <img src="H5_L.gif" id="h5_z8" width="54" height="66">
+        <img src="CSS3_L.gif" id="css_z7" width="54" height="66">
+
+        <h3>5.5 새로운 문서 표준 HTML5 </h3>
+        <img src="W3C_logo.gif" id="w3c_float" width="72" height="40">
+        <img src="H5_logo.gif" id="h5_float" width="54" height="66">
+        <img src="CSS3_logo.gif" id="css_float" width="54" height="66">
+        <p>현재 W3C에서 표준안 개발을 하고 있는 HTML5는 차세대 웹문서 ...(생략)
+
+
+            <p id="intro1">[visible] 표준안 개발에 대다수 웹브라우저 개발사가 ...(중략)... </p>
+            <p id="intro2">[hidden] 표준안 개발에 대다수 웹브라우저 개발사가 ...(중략)... </p>
+            <p id="intro3">[scroll] 표준안 개발에 대다수 웹브라우저 개발사가 ...(중략)... </p>
+            <p id="intro4">[auto] 표준안 개발에 대다수 웹브라우저 개발사가 ...(중략)... </p> 
+
+
+        </body>
+</html>

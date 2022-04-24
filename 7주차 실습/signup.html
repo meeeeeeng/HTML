@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    
+    <body>
+
+        <a>회원가입</a>
+        <a>아이디/ 비밀번호찾기</a>
+
+    <from>
+        <fieldset>
+
+           <legend>회원가입</legend>
+            <span>사용자 아이디</span> <id="user_id" input type="text"/>
+            <input id="dup_check" type="button" value ="중복체크" disabled/><br>
+
+            <span>비밀번호</span> <input id="pss" type="password"/><br/>
+            <span>비밀번호 확인</span> <input id="pss_check" type="password" /><br/>
+            <span>이름 </span> <input type="text"/><br/>
+            <span>전화번호</span> <input id="tel" type="tel"/><br/>
+            <span>이메일</span> <input id="email" type="email"/><br/>
+            <span>생일</span> <input type="date"/><br/>
+            
+            <span>연령대</span>
+                <select>
+                <option>10대이하</option>
+                <option>20대이하</option>
+                <option>30대이하</option>
+                <option>40대이하</option>
+                <option>50대이하</option>
+                </select>
+
+                <span>관심분야</span>
+
+                <label>인문학<input type="checkbox" value="humanity" name="interest"> </label> <br/>
+                <label>교육 <input type="checkbox" value="education" name="interest"> </label> <br/>
+                <label>예술 <input type="checkbox" value="art" name="interest"></label> <br/>
+                <label>컴퓨터 <input type="checkbox" value="computer" name="interest"></label> <br/>
+                <label>기타분야<input type="checkbox" value="etc" name="interest"></label> <br/>
+                <br/>
+
+                <span>배경색상</span> <input type="color"> <br/>
+                <textarea cols="30" rows="5"> 간단한 자기소개 </textarea>
+                <br/>
+
+            </fieldset>
+
+
+            <input id="sign_up" type="submit" value ="회원가입" disabled/>
+            <input id="reset2" type="reset" value ="취소" disabled/>
+            
+        </from>
+
+        
+    </body>
+
+</html>
