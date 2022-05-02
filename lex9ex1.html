@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Welcome to the JavaScript </title>
+    </head>
+    <body>
+        <script type-"text/javascript">
+            document.write("Hello,Welcome to the JavaScript World!"+ "<br/>");
+
+
+
+            var index,name="모바일 웹";
+            var start=0,end=100.0;
+            var message,condition,sender,receiver;
+
+            var a="3";
+            var b=2;
+            c=b+3+a;
+            d=a+b;
+            document.write(c+"<br/>");
+            document.write(d+"<br/>");
+
+            var first_name="Steve";
+            var last_name="Jobs";
+
+            var full_name1=first_name+" "+last_name; 
+            var full_name2=last_name+","+first_name;
+
+            document.write(full_name1+"<br/>");
+            document.write(full_name2+"<br/>"); 
+
+            var length=123,length_num,length_str;
+            length_num=length+10;
+            length_str=length.toString()+10;
+
+            document.write("Length in Number : "+length_num+"cm"+"<br/>");
+            document.write("Length in Stirng : "+length_str+"cm"+"<br/>");
+            
+          //  alert("HTML5 프로그래밍\n웹사이트로 이동합니다.");
+            var num=parseInt(length_str)+20;
+            document.write("Length in Integer : "+num+"cm"+"<br/>");
+            
+
+           // var answer1=confirm("주문한 서적을 결제하시겠습니까?");
+           // document.write("Answer = "+answer1+"<br/>");
+
+          //  var answer2=prompt("서적 제목을 입력해주세요.","모바일 멀티미디어");
+          //  document.write("Answer = "+answer2+"<br/>");
+
+         /*  
+            document.write("<table border=1>");
+
+                document.write("<caption>책 주문 입력내용</caption>");
+                document.write("<tr>");
+                document.write("<th>제목</th>");
+                document.write("</tr>");
+
+                        var book1="IT:컴퓨터와 IT기술의 이해 [개정판-2판]";
+                        var book2="SNS:소셜미디어의 이해와 활용";
+                        var book3="Multimedia:멀티미디어 배움터2.0";
+
+                        var book_list=book1+"\n"+book2+"\n"+book3+"\n";
+                        var choice=prompt("키워드를 입력하세요...\n"+book_list,"");
+
+                        switch (choice){
+                            case "IT":
+                            title=book1;break;
+
+                            case "SNS":
+                            title=book2;break;
+
+                            case "Multimedia":
+                            title=book3;break;
+
+
+                            default:
+                            alert("리스트에 없는 책을 선택하셨습니다.");
+                            title="";
+                        }
+
+                document.write("<tr>"); 
+
+                document.write("<td>"+title+"</td>"); 
+
+                document.write("</tr>"); 
+            document.write("</table>");
+
+
+
+
+
+            function show_alert(){
+                alert("5 seconds passeds...");
+            }
+
+            function show_message(){
+                document.write("3 seconds passeds...");
+            }
+
+            setTimeout(show_alert,5000);
+            setTimeout(show_message,3000);
+            */
+            function add(a,b){
+                return (a+b);
+
+            }
+
+            result1=add(12,34);
+            document.write("result1 ="+result1+"<br/>");
+            document.write("Steve+Jobs= "+add("Steve","Jobs")+"<br/>");
+            
+
+
+        </script>
+    </body>
+</html>
