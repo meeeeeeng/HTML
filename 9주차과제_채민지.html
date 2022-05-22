@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        </head>    
+
+        <body>
+        
+            <table border="1">
+
+                
+                <script type="text/javascript">
+
+
+                  var answer = prompt("값 입력 : ", "10");
+                  document.write("입력 값 = " + answer + "<br/>");
+                    document.write("<tr>");
+                    document.write("<td> Value </td>");
+                    fib1 = 1;
+                    fib2 = 1;
+                    while (fib2 < answer) {
+                    document.write("<td>");
+                    document.write(fib2);
+                    document.write("</td>");
+                    tmp = fib1 + fib2;
+                    fib1 = fib2;
+                    fib2 = tmp;
+                    }
+                    document.write("</tr>");
+                
+                </script>
+            </table>
+        </body>
+    </html>
+    
+    
+    
+
+    
