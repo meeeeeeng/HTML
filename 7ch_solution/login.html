@@ -9,6 +9,31 @@
 </head>
 <body id="login"  onload="pageload();" >
 
+  <script type="text/javascript">
+
+
+          var localStorage = window.localStorage; // 로컬 스토리지
+          
+          var itemList = document.getElementById("userList");
+          var itemAddr = document.getElementById("passAddr");
+          var u_name = document.getElementById("username");
+          var u_pass = document.getElementById("password"); 7
+          function pageload() {
+              //itemList.innerHTML = ""; // 목록 clear
+              //itemAddr.innerHTML = ""; // 스토리지의 데이터를 리스트에 추가
+
+            for (var  i = 0;  i <= localStorage.length - 1; i++) { // 로컬 스토리지
+                var key = localStorage.key(i);
+                itemList.options[itemList.options.length] = new Option(key, key);
+              }
+          } 
+          function SaveItem() { // 스토리지에 저장
+            localStorage.setItem(u_name.value, u_pass.value);
+             pageload(); // 로컬 스토리지
+          }
+
+
+</script>
 
     <form>    
       <a>회원가입</a>
@@ -19,8 +44,7 @@
         <span>비밀번호</span>
         <input id="password" type="password"><br/>
         <span></span>
-        <input id="login_button" type="submit" value="로그인" 
-         onClick="alert('ID님 로그인 되었습니다.')" onclick="SaveItem()"/>
+        <input id="login_button" type="submit" value="로그인"  onclick="SaveItem()"   onClick="alert('님 로그인 되었습니다.')" />
         <input id="reset" type="button" value="취소" />
       </fieldset>
     </form> 
