@@ -11,32 +11,33 @@
 <script type="text/javascript">
 
 window.onload = function(){
-    var myVideo = document.getElementById("myVideo"),
+    var myVideo = document.getElementById("myvideo"),
     playBtn = document.getElementById("playbtn"),
     volumeCtrl = document.getElementById("volctrl"),
     timeDiv = document.getElementById("time");
 
-    myVideo.addEventListener("canplay");
+   
     myVideo.addEventListener("timeupdate", updateTime);
-    playBtn.addEventListener("click", play);
+    playBtn.addEventListener("click", playbtn);
     volumeCtrl.addEventListener("change", updateVolume);
   }
 
   function updateTime(){ 
-      timeDiv.innerHTML = Math.floor(myVideo.currentTime) + "/"+ Math.floor(myVideo.duration) + "(초)";
+      time.innerHTML = Math.floor(myvideo.currentTime) + "/"+ Math.floor(myvideo.duration) + "(초)";
   }
+
 function play(){
-    if(myVideo.paused){
-      playBtn.innerHTML = "일시정지"; 
-      myVideo.play();
+    if(myvideo.paused){
+      playbtn.innerHTML = "일시정지"; 
+      myvideo.play();
     }else{
-      playBtn.innerHTML = "재생";
-      myVideo.pause();
+      playbtn.innerHTML = "재생";
+      myvideo.pause();
     }
 }
 
 function updateVolume(){
-    myVideo.volume = volumeCtrl.value;
+    myvideo.volume = volctrl.value;
 }
 
 
@@ -63,12 +64,12 @@ function updateVolume(){
            src="http://www.sintel.org/wp-content/uploads/2010/05/title-Sintel.jpg"/>
 
       
-        <video id="myVideo" controls height="200" src="http://media.w3.org/2010/05/sintel/trailer.mp4">
+        <video id="myvideo" controls height="200" src="http://media.w3.org/2010/05/sintel/trailer.mp4">
           Your browser does not support the video tag.</video><br/>
 
-        <button type="button" id="playbtn" onclick="play()">재생</button></br>
-        재생시간/총시간:&nbsp;<span id="time"></span><br>
-        볼륨:&nbsp;<input id="volctrl" type="range" max="1" step="any">
+        <button id="playbtn" onclick="play()">재생</button></br>
+        <p style= "color: white;">재생시간/총시간:&nbsp;<span id="time" style= "color: white;"></span><br>
+        볼륨:&nbsp;<input id="volctrl" type="range" max="1" step="any"></p>
 
    
     </li>

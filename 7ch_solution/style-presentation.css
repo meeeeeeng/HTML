@@ -9,13 +9,13 @@ img { border:none; }
 
 a { text-decoration: none; }
 
-#logo { color: darkblue; font-size: 48px; }
+#logo { color: rgb(37, 58, 74); font-size: 48px; }
 
 header .right a:hover { color: gray; }
 
 input { color:blue; }
 
-nav { background-color: aqua; }
+nav { background-color: rgb(128, 146, 180); }
     
 nav ul { list-style:none; font-family: Verdana, Geneva, sans-serif; font-size: 14px;
     font-weight: bold; color: #ff0099;
