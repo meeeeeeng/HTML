@@ -72,10 +72,15 @@
 
 
 
-        function order(){
-           
-           
-            alert(u_name.value+"님의 주문내역입니다");
+        function orderrr(){
+
+            //localStorage.getItem('name');
+         localStorage.getItem('obj')
+
+            JSON.parse(localStorage.getItem('obj'))
+            //console.log(JSON.parse(localStorage.getItem("key")));
+            
+            alert(localStorage.key(0)+"님의 주문내역입니다");
            
 
 
@@ -167,7 +172,7 @@
      
 
     <input type="reset" value="초기화" />
-    <input  id="order" type="button" value="주문하기"  onclick='alert(u_name.value+"님의 주문내역입니다");' />
+    <input  id="orderr" type="button" value="주문하기"  onclick="orderrr();" />
 </form>
 
 
