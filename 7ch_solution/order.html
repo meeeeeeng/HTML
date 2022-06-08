@@ -75,17 +75,29 @@
         function orderrr(){
 
             //localStorage.getItem('name');
-         localStorage.getItem('obj')
+         ///localStorage.getItem("obj");
+        
 
-            JSON.parse(localStorage.getItem('obj'))
+            JSON.parse(localStorage.getItem("obj"))
             //console.log(JSON.parse(localStorage.getItem("key")));
-            
-            alert(localStorage.key(0)+"님의 주문내역입니다");
+            //var { d } = JSON.parse(window.localStorage.getItem("obj"));
+
+            //var { "d" :dd,"ddd":dddd }=localStorage.obj
+            var { name, pass } = JSON.parse(window.localStorage.getItem("obj"));
+            alert(name+"님의 주문내역입니다");
            
 
 
         }
 
+
+        function printt(){
+            alert("<table>"+"<tr> <th>"+ 책제목 +"</th> <th>" +가격+" </th> <th>"+
+                 수량+" </th> <th>"+ 합계 +"</th> </tr> </table>");
+        }
+
+
+        
 
 
     </script>
@@ -172,7 +184,7 @@
      
 
     <input type="reset" value="초기화" />
-    <input  id="orderr" type="button" value="주문하기"  onclick="orderrr();" />
+    <input  id="orderr" type="button" value="주문하기"  onclick="orderrr();printt();" />
 </form>
 
 

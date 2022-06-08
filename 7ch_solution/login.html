@@ -99,13 +99,20 @@
     itemAddr.innerHTML = ""; // 스토리지의 데이터를 리스트에 추가
 
     for (var i = 0; i <= localStorage.length- 1; i++) { // 로컬 스토리지
-    var obj = localStorage.obj(i);
+    var key = localStorage.obj(i);
     //itemList.options[itemList.options.length] = new Option(key, key);
     //localStorage.setItem("name", u_name.value,"email", u_email.value) 
     
     itemList.options[itemList.options.length] = new Option('obj', JSON.stringify({name: u_name.value,pass: u_email.value}));
-    localStorage.setItem('obj', JSON.stringify({name: u_name.value,pass: u_email.value})) 
-    JSON.parse(localStorage.getItem('obj')) 
+
+
+
+
+     // localStorage.getItem("name") 
+
+      
+      localStorage.setItem('obj', JSON.stringify({name: u_name.value,pass: u_email.value})) 
+      JSON.parse(localStorage.getItem('obj')) 
       
 
 
