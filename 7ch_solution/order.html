@@ -127,10 +127,12 @@
 
          var mm  = document.getElementById("result13").value;   
 
-
+         var { name, pass } = JSON.parse(window.localStorage.getItem("obj"));
+            
+           
             // alert("<table>"+"<tr> <th>"+ 책제목 +"</th> <th>" +가격+" </th> <th>"+
              //    수량+" </th> <th>"+ 합계 +"</th> </tr> </table>");
-            var tab ='<form action=""style="background-color: #d8d8d8; "> <p style="background-color: #d8d8d8; "> 나의 주문서 </p><table border=1 style="align: center; background-color: #d8d8d8;  font-size: 14px;  border-collapse:collapse; text-align: center; border: 1px solid silver; " ><tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr>';
+            var tab ='<form action=""style="background-color: #d8d8d8; "> <h3 style="background-color: #d8d8d8; text-align: center; "> <br><br>'+name+'의 주문서 </h3><table border=1 style=" margin: 80px;  background-color: #d8d8d8;  font-size: 15px;  border-collapse:collapse; text-align: center; border: 1px solid silver; " ><tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr>';
 
 
            //document.getElementById("value1").innerText = value1;
