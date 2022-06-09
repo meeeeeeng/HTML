@@ -7,12 +7,16 @@
 <link rel="stylesheet" type="text/css" href="style-layout.css"/>
 <link rel="stylesheet" type="text/css" href="style-presentation.css"/>
 
-<link rel="preload" type="text/html" href="login.html"/>
+
+
 </head>
 <body id="order">
 
 
-    <script type="text/javascript">
+    <script type="text/javascript" >
+
+
+
         function hap() {
             var a = document.getElementById("value1").value;
             var b = document.getElementById("value2").value;
@@ -69,7 +73,146 @@
         }
 
 
+        function printt(){
+           
+           
+            var a = document.getElementById("value1").value;
+            var b = document.getElementById("value2").value;
+            var c = document.getElementById("value3").value;
+            var d = document.getElementById("value4").value;
+            var e = document.getElementById("value5").value;
+            var f = document.getElementById("value6").value;
+            var g = document.getElementById("value7").value;
+            var h = document.getElementById("value8").value;
+            var i = document.getElementById("value9").value;
+            var j = document.getElementById("value10").value;
+            var k = document.getElementById("value11").value;
+            var l = document.getElementById("value12").value;
+            var m = document.getElementById("value13").value;
+            
+         document.getElementById("result1").value=parseInt(a)*27000;
+         document.getElementById("result2").value=parseInt(b)*21000;
+         document.getElementById("result3").value=parseInt(c)*28000;
+         document.getElementById("result4").value=parseInt(d)*27000;
+         document.getElementById("result5").value=parseInt(e)*29000;
+         document.getElementById("result6").value=parseInt(f)*25000;
+         document.getElementById("result7").value=parseInt(g)*30000;
+         document.getElementById("result8").value=parseInt(h)*35000;
+         document.getElementById("result9").value=parseInt(i)*32000;
+         document.getElementById("result10").value=parseInt(j)*30000;
+         document.getElementById("result11").value=parseInt(k)*27000;
+         document.getElementById("result12").value=parseInt(l)*24000;
+      
 
+         
+
+         var aa = document.getElementById("result1").value;
+         var bb = document.getElementById("result2").value;
+         var cc = document.getElementById("result3").value;
+         var dd = document.getElementById("result4").value;
+         var ee = document.getElementById("result5").value;
+         var ff = document.getElementById("result6").value;
+         var gg = document.getElementById("result7").value;
+         var hh = document.getElementById("result8").value;
+         var ii = document.getElementById("result9").value;
+         var jj = document.getElementById("result10").value;
+         var kk = document.getElementById("result11").value;
+         var ll = document.getElementById("result12").value;
+
+
+         document.getElementById("value13").value=parseInt(a)+parseInt(b)+parseInt(c)
+         +parseInt(d)+parseInt(e)+parseInt(f)+parseInt(g)+parseInt(h)+parseInt(i)+parseInt(j)+parseInt(k)+parseInt(l)
+         document.getElementById("result13").value=parseInt(aa)+parseInt(bb)+parseInt(cc)
+         +parseInt(dd)+parseInt(ee)+parseInt(ff)+parseInt(gg)+parseInt(hh)+parseInt(ii)+parseInt(jj)+parseInt(kk)+parseInt(ll)
+
+         var mm  = document.getElementById("result13").value;   
+
+
+            // alert("<table>"+"<tr> <th>"+ 책제목 +"</th> <th>" +가격+" </th> <th>"+
+             //    수량+" </th> <th>"+ 합계 +"</th> </tr> </table>");
+            var tab ='<form action=""style="background-color: #d8d8d8; "> <p style="background-color: #d8d8d8; "> 나의 주문서 </p><table border=1 style="align: center; background-color: #d8d8d8;  font-size: 14px;  border-collapse:collapse; text-align: center; border: 1px solid silver; " ><tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr>';
+
+
+           //document.getElementById("value1").innerText = value1;
+           document.write(tab);
+
+            if((a)!=0){
+                
+                document.write("<tr><td> "+"컴퓨터와 IT기술의 이해 [개정판-2판]</td> <td> 27,000원 </td><td>"+ a+"</td><td>"+aa+"원</td></tr>");
+                    //document.write('<script><div> 서적 주문 양식 </div><form><p> 주문서 </p><table border=1><tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr><tr><td> "+"컴퓨터와 IT기술의 이해 [개정판-2판]</td> <td> 27,000원 </td><td>"+ value1.value+"</td><td>"+result1.value+"원</td></tr><\/script>');
+            }
+   
+            if((b)!=0){
+                document.write("<tr ><td> 소셜미디어의 이해와 활용 <td> 21,000원 </td><td>"+b+"</td><td>"+bb+"원</td></tr></form>");
+            }
+
+            if((c)!=0){
+                document.write("<tr ><td>비즈니스 정보 시스템 </td> <td> 28,000원 </td><td>"+c+"</td><td>"+cc+"원</td></tr>");
+            }
+
+            if((d)!=0){
+                document.write('<tr ><td>선형대수학 Express </td> <td> 27,000원 </td><td>'+d+'</td><td>'+dd+'원</td></tr>');
+            }
+
+            if((e)!=0){
+                document.write('<tr ><td>루비 프로그래밍 언어 </td> <td> 29,000원 </td><td>'+e+'</td><td>'+ee+'원</td></tr>');
+            }  
+            if((f)!=0){
+                document.write('<tr ><td> 멀티미디어 배움터 2.0 </td> <td> 25,000원 </td><td>'+f+'</td><td>'+ff+'원</td></tr>');
+            }  
+            if((g)!=0){
+                document.write('<tr ><td>네트워크 보안 에센셜(4판) </td> <td> 30,000원 </td><td>'+g+'</td><td>'+gg+'원</td></tr>');
+            }  
+            if((h)!=0){
+                document.write('<tr ><td>회로이론 </td> <td> 35,000원 </td><td>'+h+'</td><td>'+hh+'원</td></tr>');
+            }  
+            if((i)!=0){
+                document.write('<tr ><td>Big Java</td> <td> 32,000원 </td><td>'+i+'</td><td>'+ii+'원</td></tr>');
+            }  
+            if((j)!=0){
+                document.write('<tr ><td>경영학의 이해 (9/e) </td> <td> 30,000원 </td><td>'+j+'</td><td>'+jj+'원</td></tr>');
+            }  
+            if((k)!=0){
+                document.write('<tr ><td>컴퓨터 배움터 </td> <td> 27,000원 </td><td>'+k+'</td><td>'+kk+'원</td></tr>');
+            }  
+            if((l)!=0){
+                document.write('<tr ><td>(알기 쉬운) 알고리즘 </td> <td> 24,000원 </td><td>'+l+'</td><td>'+ll+'원</td></tr>');
+            }  
+
+            if((m)!=0){
+                document.write('<tr><td> 합계 </td> <td> &nbsp; </td><td>'+m+'</td><td>'+mm+'원</td> </tr></table><br><br><br>');
+
+            }   
+            /*
+            
+
+            var n=0;
+            var i=[];
+            i[0]==document.write("<div> 서적 주문 양식 </div><form><p> 주문서 </p><table border=1 border-collapse:collapse;><tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr><tr><td> "+"컴퓨터와 IT기술의 이해 [개정판-2판]</td> <td> 27,000원 </td><td>"+ value1.value+"</td><td>"+result1.value+"원</td></tr>");
+                i[1]==document.write("<tr ><td> 소셜미디어의 이해와 활용 <td> 21,000원 </td><td>"+value2.value()+"</td><td>"+result2.value()+"원</td></tr></form>");
+                i[2]==document.write("<tr ><td>비즈니스 정보 시스템 </td> <td> 28,000원 </td><td>"+value3.value()+"</td><td>"+result3.value()+"원</td></tr>");
+                i[3]==document.write('<tr ><td>선형대수학 Express </td> <td> 27,000원 </td><td>'+value4.value+'</td><td>'+result4.value+'원</td></tr>');
+                i[4]==document.write('<tr ><td>루비 프로그래밍 언어 </td> <td> 29,000원 </td><td>'+value5.value+'</td><td>'+result5.value+'원</td></tr>');
+                i[5]==document.write('<tr><td> 합계 </td> <td> &nbsp; </td><td>'+value13.value+'</td><td>'+result13.value+'원</td> </tr></table>');
+
+            document.write(tab);
+            document.write('<tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr>');
+           // for(n=1; n<10; n++){
+              
+                if((value1.value)!=0){ document.write(i[0]);}
+                if((value2.value)!=0){ document.write(i[1]);}
+                if((value3.value)!=0){ document.write(i[2]);}
+                if((value4.value)!=0){ document.write(i[3]);}
+                if((value5.value)!=0){ document.write(i[4]);}
+                //document.write(i[n]);
+           
+           
+            //document.write("<tr><td>n</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>");
+            //document.write("<tr><td>n**5</td><td>"+i[0]+"</td><td>"+i[1]+"</td><td>"+i[2]+"</td><td>"+i[3]+"</td><td>"+i[4]+"</td><td>"+i[5]+"</td><td>"+i[6]+"</td><td>"+i[7]+"</td><td>"+i[8]+"</td><td>"+i[9]+"</td></tr>");
+            document.write("</tbody>");
+            document.write("</table>");*/
+
+        }
 
 
         function orderrr(){
@@ -86,19 +229,15 @@
             var { name, pass } = JSON.parse(window.localStorage.getItem("obj"));
             alert(name+"님의 주문내역입니다");
            
-
+            //document.write("<table border=1><tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr><");
+            printt();
 
         }
 
 
-        function printt(){
-            alert("<table>"+"<tr> <th>"+ 책제목 +"</th> <th>" +가격+" </th> <th>"+
-                 수량+" </th> <th>"+ 합계 +"</th> </tr> </table>");
-        }
-
+    
 
         
-
 
     </script>
 
@@ -107,12 +246,12 @@
     <p> 주문서 </p>
     <table>
         <tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr>
-        <tr>
+        <tr id="1">
             <td> 컴퓨터와 IT기술의 이해 [개정판-2판] </td> <td> 27,000원 </td>
             <td> <input type="text" size= "2" oninput="hap();" id="value1" value="0"/> </td>
             <td> <input type="text" size= "6" id="result1" result="0"/> 원</td>
         </tr>
-        <tr>
+        <tr >
             <td> 소셜미디어의 이해와 활용 <td> 21,000원 </td>
             <td> <input type="text" size= "2"   oninput="hap();" id="value2" value="0"/> </td>
             <td> <input type="text" size= "6" id="result2" result="0"/> 원</td>
@@ -184,7 +323,7 @@
      
 
     <input type="reset" value="초기화" />
-    <input  id="orderr" type="button" value="주문하기"  onclick="orderrr();printt();" />
+    <input  id="orderr" type="button" value="주문하기"  onclick="orderrr();" />
 </form>
 
 
