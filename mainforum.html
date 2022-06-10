@@ -16,12 +16,12 @@
 
 </head>
 
-<body  id="login"  onload="pageload();" >
+<body id="login"  onload="pageload();" >
 
-  <form>    <br>
-      <h3 style=" margin: 50px;" >질의 응답 게시판</h3>
+  <form>    
+      <h3 id="h3">질의 응답 게시판</h3>
      
-      <fieldset style=" margin: 50px; width: 800px;">
+      <fieldset style="width: 800px;">
        <!--<span>사용자 아이디</span>
         <input id="username" type="text"/><br/>
         <span>비밀번호</span>
@@ -29,10 +29,9 @@
         <span></span>-->
 
 
-      
+        <br/>
        <span>제목</span>
-
-
+       
        <textarea class="form-control"style="width: 400px;" rows="1" id="title"
         name="content" placeholder="제목- 작성자 작성"></textarea>
          <!--<input type="text" size="30" id="title" value="제목을 입력하시오.">  <br>-->
@@ -46,9 +45,8 @@
          <input id="reset" type="button" value="초기화" onclick="RemoveItem()" />
        
    
-  
-
-      </form>
+        
+      
     </div>
     
     </fieldset>
@@ -57,7 +55,7 @@
     <script type="text/javascript">
    
    
-   var localStorage = window.localStorage; // 로컬 스토리지
+    var localStorage = window.localStorage; // 로컬 스토리지
     var itemList = document.getElementById("nameList");
     var itemAddr = document.getElementById("emailAddr");
     var u_name = document.getElementById("title");
@@ -73,16 +71,20 @@
       itemList.options[itemList.options.length] = new Option(key, key);
       }
     }
+
     function SaveItem() { // 스토리지에 저장
      localStorage.setItem(u_name.value, u_email.value); pageload(); // 로컬 스토리지
     }
+
     function RemoveItem() { // 선택한 항목을 스토리지에서 삭제
       var option_key = itemList.options[itemList.selectedIndex].value;
       localStorage.removeItem(option_key); pageload(); // 로컬 스토리지
     }
+
     function ClearAll() { // 스토리지의 데이터 모두 삭제
      localStorage.clear(); pageload(); // 로컬 스토리지
     }
+
     function viewContent() { // 선택한 이름의 이메일 보이기
      var option_key = itemList.options[itemList.selectedIndex].value;
      itemAddr.innerHTML = localStorage.getItem(option_key); // 로컬 스토리지
@@ -90,9 +92,10 @@
     </script>
    
    <figure>
-    <a style=" margin-left: 500px;" href="file:///C:/Users/Meengzee/Desktop/Web%20programming/mid_201921436_1.html">
-    <img id="sign" src="위화살표.jpg" alt="이전으로 화살표 이미지" width="50">
+    <a href="#h3">
+       
+    <img id="sign" src="위화살표.jpg" alt="이전으로 화살표 이미지" width="50"></a>
 
-  </figure>
+</figure>
 </body>
 </html>
